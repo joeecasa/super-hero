@@ -12,18 +12,55 @@
 
 *{
   box-sizing: border-box;
+  
+}
+body{
+  margin-left: 20px;
+  margin-right: 20px
+  ;
 }
 .heroes-section{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: space-between;
+ 
+}
+.heroes-section h3{
+  text-align: center;
+}
+.heroes-section img{
+
+  width: 200px;
 }
 img{
-  width: 200px;;
+  width: 200px;
 }
+.div-img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
 .hero-class{
+  box-shadow: 0 0 5px 0 #646b70;
+  margin-bottom: 20px;
+  padding: 10px;
   width: 300px;
 }
+.header-nav{
+  
+  font-size: 30px;
+}
+.header-nav ul a{
+  text-decoration: none;
+}
+.header-nav ul{
+  display: flex;
+}
+.header-nav li{
+  margin: 20px;
+}
+
 /* body {
   font-family: "Times New Roman", Georgia, Serif;
   margin: 0;

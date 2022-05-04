@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include("./partials/head") %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Heroes App</title>
-</head>
+  <body>
+    <%- include("./partials/header") %>
 
-<body>
-  <main>
-    <h2>Heroes App</h2>
-    <section>
+      <main>
 
-    
+        <section>
           <article>
-            <a href="/detalle/<%= heroe.id %> ">
-  
-              <h3>
-                <%= heroe.superhero %>
-              </h3>
+
+            <h3>
+              <%= heroe.superhero %>
+            </h3>
+            
               <img src="/images/<%= heroe.id %>.jpg" alt="foto de <%= heroe.id %> ">
-  
-            </a>
+            
+
             <ul>
               <li>
                 <%= heroe.publisher %>
@@ -31,15 +22,20 @@
               <li>
                 <%= heroe.alter_ego %>
               </li>
-             
+              <li>
+                <%= heroe.first_appearance %>
+              </li>
+              <li>
+                <%= heroe.characters %>
+              </li>
             </ul>
-            
-  
+
+
           </article>
-  
-      </section>
-  </main>
 
-</body>
+        </section>
+      </main>
 
-</html>
+  </body>
+
+  </html>

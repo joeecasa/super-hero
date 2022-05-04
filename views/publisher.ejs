@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Heroes App</title>
-</head>
-
+<%- include("./partials/head") %>
 <body>
+<%- include("./partials/header") %>
+
   <main>
-    <h2>Heroes App</h2>
+
     <section class="heroes-section">
 
       <% heroe.forEach(heroe=> { %>
@@ -20,7 +12,11 @@
             <h3>
               <%= heroe.superhero %>
             </h3>
-            <img src="/images/<%= heroe.id %>.jpg" alt="foto de <%= heroe.id %> ">
+            <div class="div-img" >
+              <img src="/images/<%= heroe.id %>.jpg" alt="foto de <%= heroe.id %> ">
+
+            </div>
+            
           </a>
           <ul>
             <li>
